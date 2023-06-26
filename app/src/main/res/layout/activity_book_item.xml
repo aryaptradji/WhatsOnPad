@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/wos3"
+            android:onClick="to_Home1"/>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="300dp"
+                android:src="@drawable/top_img"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harry Potter and the \nDeathly Hallows"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J.K. Rowling"
+                android:textSize="20dp"
+                android:textColor="#616161"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="@color/hijau"
+                android:gravity="center"
+                android:text="Buy Ebook"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:onClick="to_Order"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Like This"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginLeft="25dp"/>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/bottom_img_1"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/bottom_img_2"
+                    android:layout_marginLeft="15dp"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/bottom_img_3"
+                    android:layout_marginLeft="15dp"/>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/simg_2"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+</HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

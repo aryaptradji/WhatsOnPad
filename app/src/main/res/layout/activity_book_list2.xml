@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wos3"></ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="80dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/abu"
+                >
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_marginLeft="0dp"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:hint="search something"
+            android:textColor="@color/black"
+            android:paddingLeft="30dp">
+
+
+                </androidx.appcompat.widget.SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_1"
+            android:backgroundTint="@color/black"
+            android:onClick="to_akun2"/>
+
+
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/abu"
+                android:text="Romance"
+                android:textColor="@color/black"
+                android:onClick="to_Romance2"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/abu"
+                android:text="Fantasy"
+                android:textColor="@color/black"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/abu"
+                android:text="Action"
+                android:textColor="@color/black" />
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/abu"
+                android:text="Advanture"
+                android:textColor="@color/black" />
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/abu"
+                android:text="Magic"
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Featured Books"
+                android:textColor="#000"
+                android:textSize="25dp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bimg_1"
+                        android:scrollbars="horizontal"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:src="@drawable/bimg_2" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/archioflove"
+                        android:scrollbars="horizontal"
+                        android:layout_marginLeft="10dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:src="@drawable/akhirantarakita" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:text="Best Seller"
+                android:textColor="#000"
+                android:textSize="25dp" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="280dp"
+                        android:src="@drawable/simg_1"
+                        android:onClick="to_Item1"/>
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="280dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/simg_2" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="280dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/cintaterlarang"/>
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="280dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/pulang"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
